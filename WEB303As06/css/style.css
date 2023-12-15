@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'syne';
+    src: url('../fonts/syne/synemono-regular-webfont.eot');
+    src: url('../fonts/syne/synemono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/syne/synemono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/syne/synemono-regular-webfont.woff') format('woff'),
+         url('../fonts/syne/synemono-regular-webfont.ttf') format('truetype'),
+         url('../fonts/syne/synemono-regular-webfont.svg#syne_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***********
+Website Author: Esta Cimo
+
+Image credits:
+bender.png - https://purepng.com/photo/26424/clipart-futurama-bender
+futurama_bg.jpg - https://wallpapercave.com/w/Bnn63dH
+
+Information source: https://futurama.fandom.com/wiki/Bender_Bending_Rodr%C3%ADguez
+
+***********/
+
+* {
+    margin: 0;
+    padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: syne, monospace, sans-serif;
+}
+
+body {
+	background-image: url("../img/futurama_bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: backgroundFade 15s infinite alternate;
+	animation-timing-function: ease-in-out;
+
+
+}
+
+article {
+	max-width: 900px;
+	margin: 20px auto;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	box-shadow: 0 0 100px #000;
+}
+
+section {
+	padding: 20px;
+}
+
+h1 {
+	font-size: 6em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	text-shadow: -1px -1px 0 #1a1a1a, 
+        3px -3px 0 #1a1a1a,
+        -3px 1px 0 #1a1a1a, 
+        3px 3px 0 #1a1a1a;
+	margin: 10px 0 20px 0;
+}
+
+.tab-control {
+	text-transform: uppercase;
+	font-size:1.4em;
+}
+
+a {
+	color: white;
+}
+
+ul.tab-list li {
+	padding: 20px;
+}
+
+button {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	border: none;
+	padding: 20px;
+	background: none;
+	color: white;
+	display: block;
+}
+
+div#About {
+	
+}
+
+img {
+	width: 35%;
+	float: right;
+	display: inline;
+}
+
+section ul {
+	margin-top: 10px;
+}
+
+ul.tab-list {
+	display: flex;
+}
+
+.tab-panel {
+	display: none;
+}
+
+.tab-panel.active {
+	display: block;
+	background-color: rgba(232,232,232,0.1);
+}
+
+li.active {
+	background-color: rgba(232,232,232,0.1);
+}
+
+.accordion-panel {
+	display: none;
+}
+
+
+@keyframes backgroundFade {
+    0% {
+        background: url('../img/futurama_bg.jpg') center/cover;
+		background-attachment: fixed;
+    }
+	
+    100% {
+        background: url('../img/futurama_bg_2.jpg') center/cover;
+		background-attachment: fixed;
+    }
+
+    0% {
+        background: url('../img/futurama_bg.jpg') center/cover;
+		background-attachment: fixed;
+    }
+}
